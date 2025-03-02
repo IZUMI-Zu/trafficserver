@@ -130,7 +130,7 @@ union head_p {
 #define SET_FREELIST_POINTER_VERSION(_x, _p, _v) \
   (_x).s.pointer = _p;                           \
   (_x).s.version = _v
-#elif defined(__x86_64__) || defined(__ia64__) || defined(__powerpc64__) || defined(__mips64)
+#elif defined(__x86_64__) || defined(__ia64__) || defined(__powerpc64__) || defined(__mips64) || defined(__riscv)
 /* Layout of FREELIST_POINTER
  *
  *  0 ~ 47 bits : 48 bits, Virtual Address
